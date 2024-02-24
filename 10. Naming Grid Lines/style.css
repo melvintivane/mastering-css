@@ -1,0 +1,35 @@
+.container {
+    display: grid;
+    height: 80vh;
+    width: 700px;
+    margin: 0 auto;
+    font-family: sans-serif;
+
+    grid-template-rows: 80px repeat(3, 150px) 80px;
+    grid-template-columns: repeat(4, 150px);
+
+    gap: 15px;
+}
+
+.item {
+    color: white;
+    font-size: 20px;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.header {
+    grid-column: 1 / -1;
+}
+.main {
+    grid-row: 3 / 5;
+    grid-column: 1 / 4;
+}
+.sidebar {
+    grid-column: 4 / -1;
+    grid-row: 2 / 5;
+}
+.footer {
+    grid-column: 1 / -1;
+}
+
